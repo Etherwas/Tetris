@@ -1,0 +1,56 @@
+body
+{
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    margin:5%;
+    color:white;
+    
+}
+
+
+#blok 
+{
+    border:1px solid lightblue;
+    width:50%;
+    height:70vh;
+    padding:20px;
+    box-sizing: border-box;
+}
+a
+{
+    color: white;
+}
+
+#dzwiek 
+{
+    color:white;
+}
+button
+{
+    
+    text-align: center;
+    color: lightblue;
+    font-size:30px;
+    padding: 15px;
+    margin: 20px;
+    width: 40%;
+    background-color: black;
+    border: 1px solid lightblue;
+    border-radius: 5%;
+}
+button:hover
+{
+    
+    
+    color: white;
+    
+    background-color: dimgray;
+    border: 1px solid black;
+    border-radius: 5%;
+   
+}
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="lead.css">
+
+</head>
+<body>
+<div id="tak">
+   <h1>Twoje najlepsze wynniki</h1>
+
+    <script>
+       let scoreboard = JSON.parse(localStorage.getItem('scoreboard'))
+       if(scoreboard == null)
+       {
+        document.getElementById('tak').innerHTML = 'Brak rekordów'
+        
+       }
+       else {
+        for(let i=0;i<scoreboard.length;i++){
+
+            document.getElementById("tak").innerHTML += ` <div class="wszy"><div id="g${i}" class="wynik">${scoreboard[i]}</div></div>`
+        }
+    }
+        
+
+//tutaj zaczyna się wprowadzanie danych nowych, to wyżej to wypisanie, więc to zostaje jako osobna strona, ale to niżej stąd wypierdala
+        // var sc=prompt("wynik")//tu się odwołujesz do score, więc tu najłatwiej będzie ci chyba zmienić to że sc=score, a nie wszędzie zamieniać
+
+        // if(sc>localStorage.getItem(localStorage.getItem(10))){
+        //     var nick=prompt("podaj nick")
+        //     localStorage.setItem(nick,sc)
+        //     for(var i=10;i>=1;i--)
+        //     if(sc>localStorage.getItem(localStorage.getItem(i))){
+        //          localStorage.setItem(i,localStorage.getItem(--i))
+        //      }
+        //  }
+    </script>
+     <div id="Strona_główna">
+        <a href="strona_gowna.html"><button>Strona główna</button></a>
+    </div>
+    </div>
+    
+</body>
+</html>

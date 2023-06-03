@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ustawienia</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="ustawienia.css">
+    </head>
+
+    <body>
+       
+        <div id="blok">
+        <div id='dzwiek'>
+            <h1>Wyłączenie i włączenie muzyki</h1>
+          <div id='foto'><img id="foto" src="mute.jpg" onclick="zmien(1)"></div>
+        </div><br>
+        <h1>Głośność muzyki</h1>
+        <input type="range" min="0" max="100"><br>
+        <h1>Tło</h1>
+        <div id="obrazek2"><img src="biala.jpg" onclick="swap(1)"  id="obrazek2"></div>
+   
+        <div id="Strona_główna">
+            <a href="strona_gowna.html"><button>Strona główna</button></a>
+        </div>
+    </div>
+     <script>
+       function zmien(a)
+        {
+            if(a==1)
+            {
+                document.getElementById('foto').innerHTML = "<img src='unmute.jpeg' onclick='zmien(0)''>"
+               
+                
+            }
+            else 
+            {
+                document.getElementById('foto').innerHTML = "<img src='mute.jpg' onclick='zmien(1)''>"
+            }
+        }
+        function swap(b)
+            {
+                if(b==1)
+                {
+                    document.getElementById('obrazek2').innerHTML = "<img src='czarny.jpg' onclick='swap(0)''>"
+                }
+                else 
+                {
+                    document.getElementById('obrazek2').innerHTML = "<img src='biala.jpg' onclick='swap(1)''>"
+                }
+            }
+     </script>
+  
+      
+    </body>
+</html>
